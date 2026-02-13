@@ -1,0 +1,83 @@
+/**
+ * Dependable Renovations Design System
+ * Brand Essentials v1.0
+ */
+
+:root {
+  /* === PRIMARY COLORS === */
+  --color-cape-cod: #434a4c;
+  --color-sand-dune: #7c6b63;
+  --color-iron: #e5e5e6;
+  --color-white: #ffffff;
+
+  /* === SECONDARY COLORS (use sparingly) === */
+  --color-aqua-forest: #539e71;
+  --color-tulip-tree: #e8b835;
+
+  /* === SEMANTIC COLORS === */
+  --color-primary: var(--color-cape-cod);
+  --color-primary-light: var(--color-sand-dune);
+  --color-secondary: var(--color-iron);
+  --color-accent: var(--color-aqua-forest);
+  --color-accent-warm: var(--color-tulip-tree);
+  --color-background: var(--color-white);
+  --color-text-primary: var(--color-cape-cod);
+  --color-text-secondary: var(--color-sand-dune);
+  --color-text-light: #666;
+
+  /* === TYPOGRAPHY === */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Font Sizes (converted from pt to rem for web) */
+  /* Base: 16px = 1rem */
+  --font-size-display: 3rem;      /* ~48pt */
+  --font-size-h1: 2.625rem;       /* ~42pt - Titles */
+  --font-size-h2: 2rem;           /* ~32pt */
+  --font-size-h3: 1.5rem;         /* ~24pt - Body */
+  --font-size-body: 1rem;         /* ~16pt */
+  --font-size-small: 0.875rem;    /* ~14pt */
+  --font-size-tiny: 0.75rem;      /* ~12pt */
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* === SPACING === */
+  --spacing-xs: 0.5rem;     /* 8px */
+  --spacing-sm: 1rem;       /* 16px */
+  --spacing-md: 1.5rem;     /* 24px */
+  --spacing-lg: 2rem;       /* 32px */
+  --spacing-xl: 3rem;       /* 48px */
+  --spacing-2xl: 4rem;      /* 64px */
+  --spacing-3xl: 6rem;      /* 96px */
+
+  /* === BORDERS === */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 9999px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* === TRANSITIONS === */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* === Z-INDEX === */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
