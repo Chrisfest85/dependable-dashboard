@@ -1,0 +1,85 @@
+.tool-card {
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-height: 200px;
+}
+
+.tool-card-link {
+  cursor: pointer;
+}
+
+.tool-card-link:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.tool-card-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.tool-card-badge {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: var(--color-secondary);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-semibold);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tool-card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  border: 2px solid currentColor;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.tool-card-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.tool-card-description {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .tool-card {
+    padding: var(--spacing-lg);
+    min-height: 180px;
+  }
+
+  .tool-card-title {
+    font-size: var(--font-size-h3);
+  }
+
+  .tool-card-description {
+    font-size: var(--font-size-small);
+  }
+}
